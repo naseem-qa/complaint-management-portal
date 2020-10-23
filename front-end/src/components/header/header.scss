@@ -1,0 +1,63 @@
+.header{
+    font-family: 'Fjalla One', sans-serif;
+    border: solid black 1px ;
+    position: fixed;
+    height: 6.6vmax;
+    width: 100%;
+    color: #ffffff;
+    z-index: 99;
+    top:0;
+    left: 0;
+    background-color: #3b5bb1;
+    display: flex;
+
+    h1{
+      padding-left: 1.5vmax;
+    }
+    .left{
+        flex-direction: row;
+         border: solid black;
+         width: 40vmax;
+         position: absolute;
+         right: 0;
+         top: 0;
+         height: 100%;
+         ul{
+            border: black;
+            
+             li{
+                 align-items: baseline;
+                 list-style: none;
+                 display: inline-block;
+                 margin: 0 5%;
+                 font-size: 1.5vmax;
+                 a {
+                     --spacing: 1em;
+                     color: #ffffff;
+                     padding: calc(var(--spacing) / 4) var(--spacing);
+                     position: relative;
+                     text-decoration: none;
+         
+                     &:after {
+                       content: "";
+                       position: absolute;
+                       bottom: 0;
+                       color: #ec0062;
+                       left:  var(--spacing);
+                       right:  var(--spacing);
+                       height: 2px;
+                       background: currentColor;
+                       transform: scaleX(0);
+                       transition: transform 300ms ease-in-out;
+                     }
+                     &:hover::after {
+                       transform: scaleX(1);
+                     }
+                   }
+         }
+        }
+        
+
+    }
+}
+
