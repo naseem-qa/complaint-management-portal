@@ -16,7 +16,8 @@ const Home = () => {
         <Then>
           <If condition={context.user.role === 'admin'}>
             <Then>
-              <h1>Admin {context.user.username}</h1>
+              <h2>Admin Interface{context.user.username}</h2>
+              <Link className="links2" to = '/admin'>All Complaint</Link>
               {/* <Pending /> */}
             </Then>
             <Else>

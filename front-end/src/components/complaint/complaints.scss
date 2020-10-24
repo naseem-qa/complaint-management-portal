@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 .new-complaint {
-    font-family: 'Roboto', sans-serif;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 
     // border: solid;
     display: flex;
@@ -41,7 +41,7 @@
       
       button {
         width:25%;
-        background-color: #3b5bb1;
+        background-color: #7290e2;
         color: white;
         padding: 14px 20px;
         margin: 8px 0;
@@ -52,7 +52,7 @@
       }
       
       input[type=submit]:hover {
-          color: #3b5bb1;
+          color:#7290e2;
         background-color: white;
       }
       
