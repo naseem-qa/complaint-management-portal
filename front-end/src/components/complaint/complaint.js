@@ -60,7 +60,7 @@ const Complaints =(props)=> {
                         <input type="text" name="contactNum" required onChange={handleChange} />
                       
                       <label>Description </label>
-                        <input type="text" name="description" required onChange={handleChange} />
+                        <textarea  type="text" name="description" required onChange={handleChange} />
         
                         <button type="submit" >Submit Complaint</button>
                       

@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 .home{
     font-family: 'Roboto', sans-serif;
-    border:solid black;
-    height: 40vmax;
+    // border:solid black;
+    // height: 40vmax;
     position: fixed;
     top:6.6vmax;
     left: 0;
@@ -14,6 +14,8 @@
         margin-top: 10vmax;
         width: auto;
         font-size: 4vmax;
+        text-shadow: 2px 2px 8px #3b5bb1;
+    
     }
     .links{
         margin-top:3vmax;
@@ -28,6 +30,11 @@
             border-radius: 20%;
             
         }
+
+        a:hover, a:active {
+            background-color: #3b5bb1;
+            color: white;
+          }
         
 
     }

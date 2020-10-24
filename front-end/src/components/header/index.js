@@ -14,28 +14,25 @@ export default function Header() {
 
     <header className="header">
       <h1>Complaints Gate</h1>
-      <div className="left">
+        <div className="right">
       <ul className="one">
           <li ><Link to="/" >Home</Link></li>
       </ul>
       
-      <nav >
         <If condition={!context.loggedIn}>
-          <ul className="two">
+          <ul >
             <li ><Link to="/login">Signin</Link></li>
             <li><Link to="/signup">Signup</Link></li>
           </ul>
         </If>
 
         <If condition={context.loggedIn}>
-              <div >
+              <div className="two">
                 <Link onClick={context.logout} to='/'>Logout!</Link>
               </div>
-          
         </If>
-      </nav>
-      </div>
-
+     
+        </div>
     </header>
 
   );

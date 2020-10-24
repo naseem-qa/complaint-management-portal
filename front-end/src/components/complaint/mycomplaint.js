@@ -1,5 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { LoginContext } from '../auth/context'
+import './my.scss'
 
 const MyComplaints = props => {
   const authContext = useContext(LoginContext);
@@ -26,9 +27,9 @@ const MyComplaints = props => {
   return(
     <div className='mine'>
       {mine.map(oneComplaint => (
-        <div>
-          <h4>{oneComplaint.name}</h4>
-          <h4>{oneComplaint.status}</h4>
+        <div className="myCom">
+          <h4><span>- Subject:</span> {oneComplaint.name}</h4>
+          <h4> <span>The Status:</span> {oneComplaint.status}</h4>
         </div>
       ))}
     </div>

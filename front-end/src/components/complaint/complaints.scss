@@ -1,13 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
 .new-complaint {
+    font-family: 'Roboto', sans-serif;
+
     // border: solid;
     display: flex;
     flex-direction: column;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 50%;
+    margin-top: 8vmax;
+    // width: 90%;
+    margin-left: 8.5%;
 
-    & > * {
-        margin: 3%;
-    }
+    // position: absolute;
+    // transform: translate(-50%, -50%);
+     // top:6.6vmax;
+    // left: 50%;
+
+    // & > * {
+    //     margin: 3%;
+    // }
+
+    input {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+
+      textarea {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+      }
+      
+      button {
+        width:25%;
+        background-color: #3b5bb1;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        margin-top: 8px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+      
+      input[type=submit]:hover {
+          color: #3b5bb1;
+        background-color: white;
+      }
+      
 }

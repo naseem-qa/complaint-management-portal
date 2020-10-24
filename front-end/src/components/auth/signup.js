@@ -40,9 +40,9 @@ class Signup extends React.Component {
     e.target.reset();
   }
 
-  handleGoogleSubmit = () => {
-    this.context.googleSignup();
-  }
+  // handleGoogleSubmit = () => {
+  //   this.context.googleSignup();
+  // }
 
   render() {
     return (
