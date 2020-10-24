@@ -26,7 +26,9 @@ class Model{
     }
 
     update(_id, complaint){
-        return this.findByIdAndUpdate(_id, complaint);
+        console.log('id schema', _id)
+        console.log('complaint schema', complaint)
+        return this.schema.findByIdAndUpdate(_id, {status: complaint.status});
     }
 
     delete(_id){

@@ -64,7 +64,8 @@ function getMyComplaints(req,res,next) {
 function updateOne(req, res, next) {
     let _id = req.params._id;
     let complaint = req.body;
-
+  console.log('id',_id)
+  console.log('complaint',complaint)
     req.model.update(_id, complaint)
         .then(data => {
             res.json(data)
