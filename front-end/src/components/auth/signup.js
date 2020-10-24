@@ -26,23 +26,13 @@ class Signup extends React.Component {
     this.setState({ [e.target.name]: e.target.value });
   }
 
-  loginHandleSubmit = e => {
-    e.preventDefault();
-    // console.log('__STATE__', this.state);
-    this.context.login(this.state.username, this.state.password);
-    e.target.reset();
-  }
-
-  signupHandleSubmit = e => {
+    signupHandleSubmit = e => {
     e.preventDefault();
     console.log('__STATE__ tst', this.state)
     this.context.signup(this.state.username,this.state.email, this.state.password, this.state.role);
     e.target.reset();
   }
 
-  // handleGoogleSubmit = () => {
-  //   this.context.googleSignup();
-  // }
 
   render() {
     return (

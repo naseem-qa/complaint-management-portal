@@ -14,7 +14,6 @@ class LoginProvider extends React.Component {
       login: this.login,
       logout: this.logout,
       signup: this.signup,
-      googleSignup: this.googleOauth,
       user: {},
     };
   }
