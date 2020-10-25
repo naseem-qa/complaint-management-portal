@@ -2,7 +2,6 @@ import React from 'react';
 import LoginProvider from './auth/context';
 import { Route } from 'react-router-dom';
 import Header from './header/';
-import LoginContext from './auth/context.js';
 import Login from './auth/login.js';
 import Signup from './auth/signup.js';
 import Home from './home/';

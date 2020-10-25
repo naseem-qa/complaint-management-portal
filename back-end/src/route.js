@@ -65,7 +65,7 @@ function updateOne(req, res, next) {
     let _id = req.params._id;
     let complaint = req.body;
   console.log('id',_id)
-  console.log('complaint',complaint)
+  console.log('id',complaint)
     req.model.update(_id, complaint)
         .then(data => {
             res.json(data)
@@ -103,6 +103,7 @@ function signup(req, res, next) {
 
   function signin(req, res, next) {
     res.status(200).send(req.token);
+    console.log("ssssssssssss",req.token)
   }
 
 

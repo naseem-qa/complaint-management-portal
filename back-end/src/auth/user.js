@@ -18,6 +18,10 @@ const user = new mongoose.Schema({
   role: {type: String, default:'customer', enum: ['admin','customer']}
 });
 
+const capabilities = {
+    admin: ['create','read','update','delete'],
+    customer: ['read'],
+  };
 
 user.pre('save', async function () {
   if (this.isModified('password')) {
@@ -53,7 +57,7 @@ user.statics.siginTokenGenerator = function (user) {
     id: user._id,
     username: user.username,
     email: user.email,
-    role: user.role
+    role: user.role,
   };
   return jwt.sign(token, SECRET);
 };
@@ -79,5 +83,8 @@ user.statics.authenticateToken = async function (token) {
   }
 };
 
+user.methods.can = function(capability) {
+    return capabilities[this.role].includes(capability);
+  };
 
 module.exports = mongoose.model('user', user);
