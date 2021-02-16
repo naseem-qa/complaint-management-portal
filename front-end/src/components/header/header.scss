@@ -1,0 +1,50 @@
+.header {
+  font-family: "Fjalla One", sans-serif;
+  // border: solid black 1px;
+  position: fixed;
+  height: 6.6vmax;
+  width: 100%;
+  color: #ffffff;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #3b5bb1;
+  display: flex;
+
+  h1 {
+    padding-left: 1.5vmax;
+  }
+
+    .two{
+      // border: solid beige;
+      width: 5vmax;
+      margin-top: -3.08vmax;
+      margin-left: 15vmax;
+   
+    }
+
+  .right {
+    // border: solid black;
+    padding-top: 1vmax;
+    color: white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 30vmax;
+    height:  6.6vmax;
+    
+    ul {
+      display: inline-block;
+      
+      li {
+        list-style: none;
+        margin: 0 5%;
+        font-size: 1.5vmax;
+        display: inline; 
+      }
+      
+    }
+  }
+}
+
+
